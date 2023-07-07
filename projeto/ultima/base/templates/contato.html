@@ -27,15 +27,24 @@
     <body>
         <div class="col-lg-8 mx-auto p-3 py-md-5"> 
             <header class="d-flex aling-items-center pb-3 mb-5 border-bottom">
-                <a href="{%url 'inicio'%}" class=" d-flex aling-items-center text-dark text-decoration-none">
+                <a href="/" class=" d-flex aling-items-center text-dark text-decoration-none">
                     <span class="fs-4">Pet Online</span>
                 </a>
             </header>
 
             <main>
-                <h1> Reserve o banho do seu Pet</h1>
+                <h1>Fale Conosco</h1>
 
-                <a herf = "{% url 'contato %'}">Fale Conosco</a>
+                <form action="">
+                    <label for="id_nome">Nome: </label>
+                    <input type="text" id = "id_nome">
+
+                    <label for="id_email">E-mail</label>
+                    <input type="text" id="id_email">
+
+                    <label for="id_mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="id_mensagem">
+                </form>
             </main>
 
             <footer class = 'pt-5 my-5 text-muted border-top'>
